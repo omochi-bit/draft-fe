@@ -19,7 +19,7 @@
 - Hosting: GitHub Pages
 
 ## Directory structure
-- .github/: GitHub Copilot setting
+- .github/: GitHub Copilot and GitHub Actions settings
 - src/
   - assets/: Images, Fonts, Static files
   - components/: Small UI components for all screens use
@@ -33,14 +33,14 @@
   - pages/: Routing unit screen
   - layouts/: Common layout
   - hooks/: Common React hooks
-  - lib/: API client, utility tools, external service setting
-  - styles/: Global CSS, Tailwind setting
-  - store/: State management
+  - lib/: API client, utility tools, external service settings
+  - styles/: Global CSS, Tailwind settings
   - router/: React Router setting
   - utils/: General purpose logic
   - types/: Type definitions shared across the entire application
   - App.tsx
   - main.tsx
+- test/: Unit, Integration, or E2E tests
 
 ## Coding standards
 
