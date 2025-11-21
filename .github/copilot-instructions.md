@@ -15,7 +15,7 @@
 - API communication: Axios
 - Testing: Jest, React Testing Library
 - CI/CD: GitHub Actions
-- Deploy: GitHub Pages
+- Hosting: GitHub Pages
 
 ## Directory structure
 
