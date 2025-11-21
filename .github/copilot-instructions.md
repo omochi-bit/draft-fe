@@ -14,6 +14,8 @@
 - Routing: React Router
 - API communication: Axios
 - Testing: Jest, React Testing Library
+- Documentation: Storybook
+- CI/CD: GitHub Actions
 
 ## Directory structure
 
@@ -24,3 +26,5 @@
 ## Style guide
 
 ## Testing policy(Jest + React Testing Library)
+
+デプロイ先はGitHub Pages
