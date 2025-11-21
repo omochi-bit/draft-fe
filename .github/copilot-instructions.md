@@ -7,6 +7,7 @@
 
 ## Tools
 - Project setup: Vite
+- Runtime: TypeScript
 - UI/Build: React, React DOM
 - State management: useState
 - Styling: Tailwind CSS
