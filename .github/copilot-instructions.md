@@ -7,8 +7,6 @@
 
 ## Tools
 - Project setup: Vite
-
-- TODO
 - UI/Build: React, React DOM
 - State management: useState
 - Styling: Tailwind CSS
