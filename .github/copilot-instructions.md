@@ -1,5 +1,6 @@
 # copilot-instructions.md
-TODO
+
+## System overview
 
 ## Tools
 - Testing: Jest, React Testing Library
