@@ -19,27 +19,28 @@
 - Hosting: GitHub Pages
 
 ## Directory structure
-src/
-├─ assets/            # 画像・フォントなど静的ファイル
-├─ components/        # UIパーツ（小さな再利用コンポーネント）
-├─ features/          # 機能単位（Todo、User、Auth など）
-│   └─ todo/
-│       ├─ components/
-│       ├─ hooks/
-│       ├─ types.ts
-│       ├─ api.ts
-│       └─ index.ts
-├─ hooks/             # 共通のReact hooks
-├─ pages/             # 画面単位（Routing と組み合わせる）
-├─ layouts/           # 複数ページで共通のレイアウト
-├─ lib/               # APIクライアント、util系、外部サービス設定
-├─ styles/            # グローバルCSS, tailwind.css など
-├─ store/             # Zustand/Redux/Recoil など状態管理
-├─ router/            # React Router 設定
-├─ utils/             # 汎用純粋関数（TS で型だけのものなど）
-├─ types/             # 全体で共有する型定義
-├─ App.tsx
-└─ main.tsx
+- .github/: GitHub Copilot setting
+- src/
+  - assets/: Images, Fonts, Static files
+  - components/: Small UI components for all screens use
+  - features/: Functional unit grouping
+    - todo/
+      - components/: TODO-specific UI
+      - hooks/: TODO-specific logic
+      - services/: API call
+      - types.ts: TODO-type
+      - index.ts
+  - pages/: Routing unit screen
+  - layouts/: Common layout
+  - hooks/: Common React hooks
+  - lib/: API client, utility tools, external service setting
+  - styles/: Global CSS, Tailwind setting
+  - store/: State management
+  - router/: React Router setting
+  - utils/: General purpose logic
+  - types/: Type definitions shared across the entire application
+  - App.tsx
+  - main.tsx
 
 ## Coding standards
 
