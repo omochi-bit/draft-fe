@@ -20,6 +20,7 @@
 
 ## Directory structure
 - .github/: GitHub Copilot and GitHub Actions settings
+- docs/: Documents
 - src/
   - assets/: Images, Fonts, Static files
   - components/: Small UI components for all screens use
