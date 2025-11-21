@@ -1,4 +1,4 @@
 # draft-fe
 - Frontend of TODO application  
-- React project
+- React SPA project
 - Using TypeScript
