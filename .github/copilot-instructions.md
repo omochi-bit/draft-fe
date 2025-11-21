@@ -7,6 +7,8 @@
 
 ## Tools
 - Project setup: Vite
+
+- TODO
 - UI/Build: React, React DOM
 - State management: useState
 - Styling: Tailwind CSS
@@ -14,5 +16,13 @@
 - Routing: React Router
 - API communication: Axios
 - Testing: Jest, React Testing Library
+
+## Directory structure
+
+## Coding standards
+
+## Naming convention
+
+## Style guide
 
 ## Testing policy(Jest + React Testing Library)
