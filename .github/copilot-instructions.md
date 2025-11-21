@@ -1,6 +1,6 @@
 # copilot-instructions.md
 
-## System overview
+## Project overview
 - This repository manages the frontend code for a web application that handles TODO tasks
 - It is a Single Page Application (SPA) built with React
 - TypeScript is used
@@ -31,11 +31,11 @@
       - types.ts: TODO-type
       - index.ts
   - pages/: Routing unit screen
-  - layouts/: Common layout
+  - layouts/: Common layouts
   - hooks/: Common React hooks
   - lib/: API client, utility tools, external service settings
   - styles/: Global CSS, Tailwind settings
-  - router/: React Router setting
+  - router/: React Router settings
   - utils/: General purpose logic
   - types/: Type definitions shared across the entire application
   - App.tsx
