@@ -43,6 +43,8 @@
   - main.tsx
 - test/: Unit, Integration, or E2E tests
 
+## Specification document structure
+
 ## Coding standards
 
 ## Naming convention
