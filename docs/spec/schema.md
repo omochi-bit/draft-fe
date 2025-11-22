@@ -1,6 +1,6 @@
-# テーブル定義書（Based on ERD）
+# テーブル定義書
 
-## 1. `users` テーブル
+## users テーブル
 
 ### 概要
 
@@ -22,9 +22,7 @@
   -------------------- -------- ----------
   users_email_unique   email    YES
 
-------------------------------------------------------------------------
-
-## 2. `tasks` テーブル
+## tasks テーブル
 
 ### 概要
 
@@ -57,7 +55,7 @@
 
 ------------------------------------------------------------------------
 
-## 3. `tags` テーブル
+## tags テーブル
 
 ### 概要
 
@@ -92,24 +90,17 @@
   ----------------- ----------- ---------
   tags_user_id_fk   users(id)   user_id
 
-------------------------------------------------------------------------
-
-## 4. `task_tags` テーブル
+## task_tags テーブル
 
 ### 概要
-
 タスクとタグの多対多関係を表す中間テーブル。
 
 ### カラム定義
-
-  カラム名   型     NOT NULL   主キー           説明
-  ---------- ------ ---------- ---------------- ----------
-  task_id    UUID   YES        PK (composite)   タスクID
-  tag_id     UUID   YES        PK (composite)   タグID
+- カラム名、型、NOT NULL、主キー、説明
+- task_id、UUID、YES、、PK (composite)、タスクID
+- tag_id、UUID、YES、PK (composite)、タグID
 
 ### 外部キー
-
-  名称                   参照先      カラム
-  ---------------------- ----------- ---------
-  task_tags_task_id_fk   tasks(id)   task_id
-  task_tags_tag_id_fk    tags(id)    tag_id
+- 名称、参照先、カラム
+- task_tags_task_id_fk、tasks(id)、task_id
+- task_tags_tag_id_fk、tags(id)、tag_id
