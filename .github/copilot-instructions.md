@@ -44,7 +44,7 @@
 - test/: Unit, Integration, or E2E tests
 
 ## Specification document structure
-
+docs/spec/schema.sql：入力バリデーションにも使用してください
 ## Coding standards
 
 ## Naming convention
