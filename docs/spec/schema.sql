@@ -5,7 +5,7 @@ CREATE TABLE users (
     password_hash VARCHAR(255) NOT NULL,
     created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- Tasks table: stores tasks created by users
 CREATE TABLE tasks (
@@ -18,7 +18,7 @@ CREATE TABLE tasks (
     updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     CONSTRAINT tasks_user_id_fk FOREIGN KEY (user_id)
         REFERENCES users(id) ON DELETE CASCADE
-);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- Composite index: speeds up queries for tasks by user and completion status
 CREATE INDEX tasks_user_id_is_completed_index
@@ -34,7 +34,7 @@ CREATE TABLE tags (
     CONSTRAINT tags_user_id_fk FOREIGN KEY (user_id)
         REFERENCES users(id) ON DELETE CASCADE,
     CONSTRAINT tags_user_id_name_unique UNIQUE (user_id, name)
-);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- Task_Tags table: junction table for many-to-many relationship between tasks and tags
 CREATE TABLE task_tags (
@@ -45,4 +45,4 @@ CREATE TABLE task_tags (
         REFERENCES tasks(id) ON DELETE CASCADE,
     CONSTRAINT task_tags_tag_id_fk FOREIGN KEY (tag_id)
         REFERENCES tags(id) ON DELETE CASCADE
-);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
